@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achadinhos Aventureiros - Loja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            margin-top: 6rem;
+        }
+
+        .produto-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .produto-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .produto-imagem {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .produto-info {
+            padding: 1.5rem;
+        }
+
+        .produto-preco {
+            font-size: 1.25rem;
+            color: var(--verde-menta);
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+
+        .comprar-btn {
+            background-color: var(--verde-menta);
+            color: #333;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .comprar-btn:hover {
+            background-color: var(--azul-claro);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <img src="images/logo.png" alt="Achadinhos Aventureiros">
+                <h1>Achadinhos Aventureiros</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loja.html" class="active">Loja</a></li>
+                <li><a href="noticias.html">Blog</a></li>
+                <li><a href="achadinhos.html">Achadinhos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produtos-grid">
+            <div class="produto-card">
+                <img src="images/produto1.jpg" alt="Bíblia Infantil" class="produto-imagem">
+                <div class="produto-info">
+                    <h3>Bíblia Infantil Ilustrada</h3>
+                    <p>Uma Bíblia especial para crianças, com histórias ilustradas e linguagem simples.</p>
+                    <p class="produto-preco">R$ 49,90</p>
+                    <a href="#" class="comprar-btn">Comprar</a>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <img src="images/produto2.jpg" alt="Camiseta Achadinhos" class="produto-imagem">
+                <div class="produto-info">
+                    <h3>Camiseta Achadinhos</h3>
+                    <p>Camiseta exclusiva com o logo dos Achadinhos Aventureiros.</p>
+                    <p class="produto-preco">R$ 39,90</p>
+                    <a href="#" class="comprar-btn">Comprar</a>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <img src="images/produto3.jpg" alt="Diário de Oração" class="produto-imagem">
+                <div class="produto-info">
+                    <h3>Diário de Oração</h3>
+                    <p>Diário especial para registrar suas orações e momentos com Deus.</p>
+                    <p class="produto-preco">R$ 29,90</p>
+                    <a href="#" class="comprar-btn">Comprar</a>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <img src="images/produto4.jpg" alt="Kit Aventureiro" class="produto-imagem">
+                <div class="produto-info">
+                    <h3>Kit Aventureiro</h3>
+                    <p>Kit completo com Bíblia, diário e marcador de página personalizado.</p>
+                    <p class="produto-preco">R$ 79,90</p>
+                    <a href="#" class="comprar-btn">Comprar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2024 Achadinhos Aventureiros - Igreja Novo Tempo</p>
+    </footer>
+</body>
+</html> 
