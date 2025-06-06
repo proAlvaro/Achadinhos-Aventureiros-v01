@@ -15,6 +15,9 @@
                 <img src="images/logo.png" alt="Achadinhos Aventureiros">
                 <h1>Achadinhos Aventureiros</h1>
             </div>
+            <button class="menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="loja.html">Loja</a></li>
@@ -71,5 +74,13 @@
         </div>
         <p>&copy; 2024 Achadinhos Aventureiros - Igreja Novo Tempo</p>
     </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+    </script>
 </body>
 </html> 
